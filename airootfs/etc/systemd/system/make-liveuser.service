@@ -1,0 +1,7 @@
+[Unit]
+Description=Create live user
+After=network.target
+Before=nextcloud-web.service
+
+[Service]
+ExecStart=/etc/mkliveuser.sh
